@@ -15,13 +15,16 @@
     "allowJs": true,
     "strict": true,
     "skipLibCheck": true,
-    "types": ["vite/client"]
+    "types": ["vite/client"],
+    "jsx": "react-jsx"
   },
   "include": [
     "src/**/*.ts",
     "src/**/*.js",
+    "src/**/*.tsx",
     "../shared/",
     "atlas-builder/**/*.ts",
-    "global.d.ts"
+    "global.d.ts",
+    "src/main.tsx"
   ]
 }
