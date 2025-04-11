@@ -8,7 +8,7 @@
     "outDir": "./dist",
     "newLine": "lf",
     "allowSyntheticDefaultImports": true,
-    "useDefineForClassFields": true,
+    "useDefineForClassFields": true,  
     "resolveJsonModule": true,
     "isolatedModules": true,
     "allowImportingTsExtensions": true,

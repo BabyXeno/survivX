@@ -34,7 +34,6 @@ import React, {
   import { ProfileUi } from "./ui/profileUi";
   import { TeamMenu } from "./ui/teamMenu";
   import { loadStaticDomImages } from "./ui/ui2";
-  // Better Season Pass Imports
   import {
     Shield,
     Zap,
@@ -49,17 +48,14 @@ import React, {
     X,
     ChevronDown,
   } from "lucide-react";
-  // Import components
   import BuyItems from "./components/BuyItems.tsx";
   import SellItems from "./components/SellItems.tsx";
-  // Import types
   import {
     Mission,
     Streamer,
     Reward,
     LoadoutItem,
   } from "./types/types.ts";
-  // Import data
   import {
     missions,
     streamers,
@@ -85,8 +81,7 @@ import React, {
     addrs: string[];
     data: string;
   }
-  
-  // The original GameContainer and application
+
   class Application {
     nameInput = $("#player-name-input-solo");
     serverSelect = $("#server-select-main");
@@ -483,7 +478,6 @@ import React, {
       this.refreshUi();
     }
   
-    // Config
     setConfigFromDOM() {
       const playerName = helpers.sanitizeNameInput(
         this.nameInput.val() as string,
@@ -550,14 +544,12 @@ import React, {
         $("#start-main").stop(true);
         document.addEventListener("contextmenu", this.contextListener);
       }
-  
-      // Hide the left section if on mobile, oriented portrait, and viewing create team
+
       $("#ad-block-left").css(
         "display",
         !device.isLandscape && this.teamMenu.active ? "none" : "block",
       );
-  
-      // Warning
+
       const hasError = this.active && this.errorMessage != "";
       this.serverWarning.css({
         display: "block",
@@ -582,7 +574,7 @@ import React, {
       if (this.account.requestsInFlight == 0) {
         cb();
       } else {
-        // Wait some maximum amount of time for pending account requests
+
         const timeout = setTimeout(() => {
           runOnce();
         }, 2500);
@@ -613,14 +605,11 @@ import React, {
   
     tryQuickStartGame(gameModeIdx: number) {
       if (this.quickPlayPendingModeIdx === -1) {
-        // Update UI to display a spinner on the play button
         this.errorMessage = "";
         this.quickPlayPendingModeIdx = gameModeIdx;
         this.setConfigFromDOM();
         this.refreshUi();
-  
-        // Wait some amount of time if we've recently attempted to
-        // find a game to prevent spamming the server
+
         let delay = 0;
         if (this.findGameAttempts > 0 && Date.now() - this.findGameTime < 30000) {
           delay = Math.min(this.findGameAttempts * 2.5 * 1000, 7500);
@@ -787,8 +776,6 @@ import React, {
       this.audioManager.update(dt);
       this.ambience.update(dt, this.audioManager, !this.active);
       this.teamMenu.update(dt);
-  
-      // Game update
       if (this.game?.initialized && this.game.m_playing) {
         if (this.active) {
           this.setAppActive(false);
@@ -796,8 +783,6 @@ import React, {
         }
         this.game.update(dt);
       }
-  
-      // LoadoutDisplay update
       if (
         this.active &&
         this.loadoutDisplay &&
@@ -823,14 +808,10 @@ import React, {
       this.input!.flush();
     }
   }
-  
-  // React Component to Host the Game
   function GameContainer() {
     const appRef = useRef<Application | null>(null);
     const betterPassContainerRef = useRef<HTMLDivElement>(null);
-  
     useEffect(() => {
-      // Initialize the game application
       appRef.current = new Application();
   
       const onPageLoad = () => {
@@ -858,7 +839,6 @@ import React, {
       });
       window.addEventListener("beforeunload", (e) => {
         if (appRef.current!.game?.warnPageReload()) {
-          // In new browsers, dialogText is overridden by a generic string
           const dialogText = "Do you want to reload the game?";
           e.returnValue = dialogText;
           return dialogText;
@@ -890,7 +870,6 @@ import React, {
         };
         const errStr = JSON.stringify(errObj);
   
-        // Don't report the same error multiple times
         if (!reportedErrors.includes(errStr)) {
           reportedErrors.push(errStr);
           console.error("windowOnError", errStr);
@@ -903,7 +882,6 @@ import React, {
         }
       });
   
-      // Cleanup on unmount
       return () => {
         document.removeEventListener("DOMContentLoaded", onPageLoad);
         window.removeEventListener("load", onPageLoad);
@@ -921,7 +899,6 @@ import React, {
         });
         window.removeEventListener("beforeunload", (e) => {
           if (appRef.current!.game?.warnPageReload()) {
-            // In new browsers, dialogText is overridden        // by a generic string
           const dialogText = "Do you want to reload the game?";
           e.returnValue = dialogText;
           return dialogText;
@@ -935,8 +912,6 @@ import React, {
       });
     };
   }, []);
-
-  // Better Pass code goes directly into the GameContainer
 
   const [currentLevel] = useState(5);
   const [goldAmount] = useState(3580);
@@ -988,7 +963,7 @@ import React, {
     setActiveShopMode(null);
   };
   const battlePassTitlePosition = {
-    top: 430,
+    top: 100,
     left: 487,
   };
   useEffect(() => {
@@ -1124,87 +1099,105 @@ import React, {
     left: 1042,
   };
   const unlockAllPosition = {
-    top: 450,
+    top: 145,
     left: 644,
   };
   const seasonEndsPosition = {
-    top: 510,
+    top: 210,
     left: 673,
   };
 
   const socialLinksPosition = {
-    top: 50,
-    left: 1385,
+    top: 235,
+    left: 1135,
   };
   const googlePlayPosition = {
-    top: 350,
-    left: 20,
+    top: -50,
+    left: 10,
   };
   const appStorePosition = {
-    top: 410,
-    left: 20,
+    top: 25,
+    left: 10,
   };
   const battlePassRewardsPosition = {
-    top: 225,
+    top: -75,
     left: 512,
   };
   const streamingBoxPosition = {
-    top: 50,
-    left: 20,
+    top: -340,
+    left: 0,
   };
   const missionsBoxPosition = {
-    top: 225,
-    left: 295,
+    top: -75,
+    left: 288,
   };
   const xpBoostBoxPosition = {
-    top: 465,
-    left: 295,
+    top: 170,
+    left: 288,
   };
   const rewardWidth = 96;
   const containerWidth = 5 * rewardWidth;
-  const scrollContainerRef = useRef<HTMLDivElement>(null); // Reference for scrollable container
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
   return (
     <div ref={betterPassContainerRef}>
       <div
         className="min-h-screen bg-cover bg-center relative"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
                              url(/Better_Pass/images/background.png)`,
         }}
       >
         {/* Top Navigation */}
         <div className="bg-transparent p-2 flex justify-between items-center">
-          <div className="flex items-center space-x-4">
-            <div className="bg-[#333300] px-3 py-1 rounded-md flex items-center border border-yellow-500">
-              <img
-                src="/Better_Pass/images/imagegp.png"
-                alt="GP"
-                className="w-4 h-4 mr-2"
-              />
-              <span className="text-yellow-400 font-bold">{goldAmount}</span>
-            </div>
-            <button
-              className="bg-purple-700 hover:bg-purple-800 px-4 py-1 rounded-md flex items-center"
-              onClick={() => setShowBundleModal(true)}
-            >
-              <ShoppingCart size={16} className="mr-2" />
-              SHOP
-              <span className="text-xs ml-2 text-gray-300">
-                New Bundles: {shopBundleTime}
-              </span>
-            </button>
-          </div>
+        <div
+  className="flex items-center space-x-4"
+  style={{ position: "absolute", top: "-370px", left: "10px" }}
+>
+  <div className="bg-[#333300] px-3 py-1 rounded-md flex items-center border border-yellow-500">
+    <img
+      src="/img/battlePass/imagegp.svg"
+      alt="GP"
+      className="w-4 h-4 mr-2"
+    />
+    <span className="text-yellow-400 font-bold">3580</span>
+  </div>
+  <button
+  className="bg-purple-700 hover:bg-purple-800 px-4 py-1 rounded-md flex items-center"
+  onClick={() => setShowBundleModal(true)}
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="16"
+    height="16"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className="lucide lucide-shopping-cart mr-2"
+  >
+    <circle cx="8" cy="21" r="1"></circle>
+    <circle cx="19" cy="21" r="1"></circle>
+    <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
+  </svg>
+  SHOP
+  <span className="text-xs ml-2 text-gray-300">New Bundles: 01h 50m 21s</span>
+</button>
 
-          <div className="flex items-center space-x-4">
-            <button className="bg-gray-700 hover:bg-gray-600 p-2 rounded-md">
-              <Settings size={16} />
-            </button>
-            <button className="bg-purple-700 hover:bg-purple-800 px-4 py-1 rounded-md">
-              LOGIN
-            </button>
-          </div>
+</div>
+<div
+  className="flex items-center space-x-4"
+  style={{ position: "absolute", top: "-367px", left: "1400px" }} 
+>
+  <button className="bg-gray-700 hover:bg-gray-600 p-2 rounded-md">
+    <Settings size={16} />
+  </button>
+  <button className="bg-purple-700 hover:bg-purple-800 px-4 py-1 rounded-md">
+    LOGIN
+  </button>
+</div>
         </div>
-
         {/* Main Content */}
         <div className="max-w-6xl mx-auto grid grid-cols-12 gap-4 p-4">
           {/* Left Column - Streaming & Missions */}
@@ -1316,7 +1309,7 @@ import React, {
                 <div className="flex items-center">
                   <div className="w-8 h-8 mr-2">
                     <img
-                      src="/Better_Pass/images/imagegoogle.png"
+                      src="/img/battlePass/imagegoogle.svg"
                       alt="Google Play"
                       className="w-8 h-8"
                     />
@@ -1347,7 +1340,7 @@ import React, {
                 <div className="flex items-center">
                   <div className="w-8 h-8 mr-2">
                     <img
-                      src="/Better_Pass/images/imageapple.png"
+                      src="/img/battlePass/imageapple.svg"
                       alt="App Store"
                       className="w-8 h-8"
                     />
@@ -1383,7 +1376,7 @@ import React, {
               <button className="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-2 rounded-lg flex items-center justify-center">
                 Get Free GP
                 <img
-                  src="/Better_Pass/images/imagegp.png"
+                  src="/img/battlePass/imagegp.svg"
                   alt="GP"
                   className="w-4 h-4 ml-2"
                 />
@@ -1394,17 +1387,12 @@ import React, {
           {/* Center Column - Battle Pass */}
           <div className="col-span-6">
             {/* Game Banner */}
-            <div
-              className="relative mx-auto mb-4"
-              style={{ width: "400px", height: "144px" }}
+            <div 
             >
               <img
-                src="/Better_Pass/images/banner.png"
-                alt="Game Banner"
-                className="w-full h-full object-cover rounded-md"
+              className="w-full h-full object-cover rounded-md"
               />
             </div>
-
             {/* Battle Pass Header */}
             <div
               style={{
@@ -1574,113 +1562,6 @@ import React, {
           </div>
         </div>
 
-        {/* Right Column - Player Info & Battle */}
-        <div className="col-span-3">
-          {/* Player Info */}
-          <div
-            className="bg-black rounded-lg p-4 mb-4 border border-gray-700"
-            style={{
-              position: "absolute",
-              top: playerInfoPosition.top,
-              left: playerInfoPosition.left,
-            }}
-          >
-            <div className="flex items-center">
-              <div className="relative">
-                <img
-                  src="/Better_Pass/images/imageprofile.png"
-                  alt="Player Avatar"
-                  className="w-16 h-16 rounded-full bg-orange-500"
-                />
-              </div>
-              <div className="ml-4 flex-grow">
-                <div className="bg-black text-yellow-300 text-center py-1 px-2 rounded mb-2 font-bold">
-                  Prestige 0
-                </div>
-                <button className="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-2 rounded">
-                  Loadout
-                </button>
-              </div>
-            </div>
-          </div>
-
-          {/* Battle Button */}
-          <div
-            style={{
-              position: "absolute",
-              top: battlePosition.top,
-              left: battlePosition.left,
-            }}
-          >
-            <div className="space-y-2">
-              <button className="w-full bg-purple-600 hover:bg-purple-700 text-white text-xl font-bold py-3 rounded">
-                Battle
-              </button>
-              <div className="grid grid-cols-2 gap-2">
-                <div className="relative">
-                  <button
-                    className="bg-green-600 hover:bg-green-700 text-white font-bold py-2 rounded flex items-center justify-center w-full"
-                    onClick={toggleClassicDropdown}
-                  >
-                    <span className="mr-1">⚛️</span> {selectedGameType}{" "}
-                    <ChevronDown size={16} className="ml-1" />
-                  </button>
-
-                  {isClassicDropdownOpen && (
-                    <div className="absolute left-0 mt-1 w-full bg-green-700 border border-green-800 rounded shadow-md z-10">
-                      <button
-                        className="block w-full text-left px-4 py-2 text-white hover:bg-green-800"
-                        onClick={() => selectGameType("Classic")}
-                      >
-                        Classic
-                      </button>
-                      <button
-                        className="block w-full text-left px-4 py-2 text-white hover:bg-green-800"
-                        onClick={() => selectGameType("Ranked")}
-                      >
-                        Ranked
-                      </button>
-                    </div>
-                  )}
-                </div>
-                <div className="relative">
-                  <button
-                    className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 rounded flex items-center justify-center w-full"
-                    onClick={toggleSoloDropdown}
-                  >
-                    <span className="mr-1">🔮</span> {selectedMode}{" "}
-                    <ChevronDown size={16} className="ml-1" />
-                  </button>
-                  {isSoloDropdownOpen && (
-                    <div className="absolute left-0 mt-1 w-full bg-blue-700 border border-blue-800 rounded shadow-md z-10">
-                      <button
-                        className="block w-full text-left px-4 py-2 text-white hover:bg-blue-800"
-                        onClick={() => selectMode("Solo")}
-                      >
-                        Solo
-                      </button>
-                      <button
-                        className="block w-full text-left px-4 py-2 text-white hover:bg-blue-800"
-                        onClick={() => selectMode("Duo")}
-                      >
-                        Duo
-                      </button>
-                      <button
-                        className="block w-full text-left px-4 py-2 text-white hover:bg-blue-800"
-                        onClick={() => selectMode("Squads")}
-                      >
-                        Squads
-                      </button>
-                    </div>
-                  )}
-                </div>
-              </div>
-              <button className="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 rounded">
-                Make Team
-              </button>
-            </div>
-          </div>
-
           {/* Social Links */}
           <div
             style={{
@@ -1758,7 +1639,7 @@ import React, {
                       <div className="bg-blue-900 border-2 border-blue-700 rounded p-2 text-center cursor-pointer hover:brightness-110">
                         <div className="flex justify-center items-center mb-1">
                           <img
-                            src="/Better_Pass/images/imagegp.png"
+                            src="/img/battlePass/imagegp.svg"
                             alt="GP"
                             className="w-5 h-5 mr-1"
                           />
@@ -1772,7 +1653,7 @@ import React, {
                       <div className="bg-blue-900 border-2 border-blue-700 rounded p-2 text-center cursor-pointer hover:brightness-110">
                         <div className="flex justify-center items-center mb-1">
                           <img
-                            src="/Better_Pass/images/imagegp.png"
+                            src="/img/battlePass/imagegp.svg"
                             alt="GP"
                             className="w-5 h-5 mr-1"
                           />
@@ -1786,7 +1667,7 @@ import React, {
                       <div className="bg-blue-900 border-2 border-blue-700 rounded p-2 text-center cursor-pointer hover:brightness-110">
                         <div className="flex justify-center items-center mb-1">
                           <img
-                            src="/Better_Pass/images/imagegp.png"
+                            src="/img/battlePass/imagegp.svg"
                             alt="GP"
                             className="w-5 h-5 mr-1"
                           />
@@ -1802,7 +1683,7 @@ import React, {
                       <div className="bg-blue-900 border-2 border-blue-700 rounded p-2 text-center cursor-pointer hover:brightness-110">
                         <div className="flex justify-center items-center mb-1">
                           <img
-                            src="/Better_Pass/images/imagegp.png"
+                            src="/img/battlePass/imagegp.svg"
                             alt="GP"
                             className="w-5 h-5 mr-1"
                           />
@@ -1842,7 +1723,7 @@ import React, {
                     </h3>{" "}
                     <div className="relative overflow-hidden rounded-md">
                       <img
-                        src="/Better_Pass/images/image51.png"
+                        src="/img/battlePass/image51.svg"
                         alt="Featured Item"
                         className="w-full h-32 object-cover rounded-md"
                       />
@@ -1919,21 +1800,21 @@ import React, {
                       {/* Use actual premium rewards here */}
                       <div className="border-2 border-green-500 p-2 flex justify-center items-center h-16">
                         <img
-                          src={premiumPassRewards[0].image} // Premium Reward 1
+                          src={premiumPassRewards[0].image} 
                           alt="Premium Reward 1"
                           className="w-full h-full object-contain"
                         />
                       </div>
                       <div className="border-2border-teal-400 p-2 flex justify-center items-center h-16">
                         <img
-                          src={premiumPassRewards[1].image} // Premium Reward 2
+                          src={premiumPassRewards[1].image} 
                           alt="Premium Reward 2"
                           className="w-full h-full object-contain"
                         />
                       </div>
                       <div className="border-2 border-purple-500 p-2 flex justify-center items-center h-16">
                         <img
-                          src={premiumPassRewards[2].image} // Premium Reward 3
+                          src={premiumPassRewards[2].image} 
                           alt="Premium Reward 3"
                           className="w-full h-full object-contain"
                         />
@@ -1942,7 +1823,7 @@ import React, {
                     <div className="mt-4 flex items-center justify-center">
                       <button className="flex items-center justify-center bg-gray-700 hover:bg-gray-600 rounded-md py-2 px-4">
                         <img
-                          src="/Better_Pass/images/imagegp.png"
+                          src="/img/battlePass/imagegp.svg"
                           alt="GP"
                           className="w-5 h-5 mr-2"
                         />
@@ -1960,28 +1841,28 @@ import React, {
                       {/* Use actual premium rewards here */}
                       <div className="border-2 border-green-500 p-2 flex justify-center items-center h-16">
                         <img
-                          src={premiumPassRewards[3].image} // Premium Reward 4
+                          src={premiumPassRewards[3].image} 
                           alt="Premium Reward 4"
                           className="w-full h-full object-contain"
                         />
                       </div>
                       <div className="border-2 border-teal-400 p-2 flex justify-center items-center h-16">
                         <img
-                          src={premiumPassRewards[4].image} // Premium Reward 5
+                          src={premiumPassRewards[4].image} 
                           alt="Premium Reward 5"
                           className="w-full h-full object-contain"
                         />
                       </div>
                       <div className="border-2 border-teal-400 p-2 flex justify-center items-center h-16">
                         <img
-                          src={premiumPassRewards[5].image} // Premium Reward 6
+                          src={premiumPassRewards[5].image} 
                           alt="Premium Reward 6"
                           className="w-full h-full object-contain"
                         />
                       </div>
                       <div className="col-start-2 border-2 border-purple-500 p-2 flex justify-center items-center h-16">
                         <img
-                          src={premiumPassRewards[6].image} // Premium Reward 7
+                          src={premiumPassRewards[6].image} 
                           alt="Premium Reward 7"
                           className="w-full h-full object-contain"
                         />
@@ -1990,7 +1871,7 @@ import React, {
                     <div className="mt-4 flex items-center justify-center">
                       <button className="flex items-center justify-center bg-gray-700 hover:bg-gray-600 rounded-md py-2 px-4">
                         <img
-                          src="/Better_Pass/images/imagegp.png"
+                          src="/img/battlePass/imagegp.svg"
                           alt="GP"
                           className="w-5 h-5 mr-2"
                         />
@@ -2042,13 +1923,11 @@ import React, {
           </div>
         )}
       </div>
-    </div>
-  );
-}
+
+)}
 const originalGameContainer = () => {
   return <div id="game-container"></div>;
 };
-// Main App Component from Better_Season_Pass
 
 function App() {
   return <GameContainer />;
@@ -2062,6 +1941,3 @@ if (rootElement) {
     </StrictMode>,
   );
 }
-
-
-  

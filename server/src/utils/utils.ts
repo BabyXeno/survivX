@@ -12,7 +12,7 @@ export const getRarityColor = (rarity: string) => {
       case "legendary":
         return "bg-yellow-500";
       case "mythic":
-        return "bg-orange-500";
+        return "bg-red-500";
       default:
         return "bg-gray-500";
     }
@@ -31,7 +31,7 @@ export const getRarityColor = (rarity: string) => {
       case "legendary":
         return "shadow-yellow-500/30";
       case "mythic":
-        return "shadow-orange-500/30";
+        return "shadow-red-500/30";
       default:
         return "shadow-gray-500/30";
     }
@@ -50,7 +50,7 @@ export const getRarityColor = (rarity: string) => {
       case "legendary":
         return "border-yellow-600";
       case "mythic":
-        return "border-orange-600";
+        return "border-red-600";
       default:
         return "border-gray-600";
     }
@@ -69,7 +69,7 @@ export const getRarityColor = (rarity: string) => {
       case "legendary":
         return "text-yellow-300";
       case "mythic":
-        return "text-orange-300";
+        return "text-red-300";
       default:
         return "text-gray-300";
     }

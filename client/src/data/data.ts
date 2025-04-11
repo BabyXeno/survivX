@@ -37,7 +37,7 @@ export const freePassRewards: Reward[] = [
     isPremium: false,
     position: 1,
     type: "skin",
-    image: "/Better_Pass/images/image1.png",
+    image: "/img/battlePass/image1.svg",
   },
   {
     id: 2,
@@ -45,7 +45,7 @@ export const freePassRewards: Reward[] = [
     isPremium: false,
     position: 2,
     type: "emote",
-    image: "/Better_Pass/images/image2.png",
+    image: "/img/battlePass/image2.svg",
   },
   {
     id: 3,
@@ -53,7 +53,7 @@ export const freePassRewards: Reward[] = [
     isPremium: false,
     position: 3,
     type: "melee",
-    image: "/Better_Pass/images/image3.png",
+    image: "/img/battlePass/image3.svg",
   },
   {
     id: 4,
@@ -61,7 +61,7 @@ export const freePassRewards: Reward[] = [
     isPremium: false,
     position: 4,
     type: "skin",
-    image: "/Better_Pass/images/image4.png",
+    image: "/img/battlePass/image4.svg",
   },
   {
     id: 5,
@@ -69,7 +69,7 @@ export const freePassRewards: Reward[] = [
     isPremium: false,
     position: 5,
     type: "emote",
-    image: "/Better_Pass/images/image5.png",
+    image: "/img/battlePass/image5.svg",
   },
   {
     id: 6,
@@ -77,7 +77,7 @@ export const freePassRewards: Reward[] = [
     isPremium: false,
     position: 6,
     type: "melee",
-    image: "/Better_Pass/images/image6.png",
+    image: "/img/battlePass/image6.svg",
   },
   {
     id: 7,
@@ -85,7 +85,7 @@ export const freePassRewards: Reward[] = [
     isPremium: false,
     position: 7,
     type: "skin",
-    image: "/Better_Pass/images/image7.png",
+    image: "/img/battlePass/image7.svg",
   },
   {
     id: 8,
@@ -93,7 +93,7 @@ export const freePassRewards: Reward[] = [
     isPremium: false,
     position: 8,
     type: "emote",
-    image: "/Better_Pass/images/image8.png",
+    image: "/img/battlePass/image8.svg",
   },
   {
     id: 9,
@@ -101,7 +101,7 @@ export const freePassRewards: Reward[] = [
     isPremium: false,
     position: 9,
     type: "melee",
-    image: "/Better_Pass/images/image9.png",
+    image: "/img/battlePass/image9.svg",
   },
   {
     id: 10,
@@ -109,7 +109,7 @@ export const freePassRewards: Reward[] = [
     isPremium: false,
     position: 10,
     type: "skin",
-    image: "/Better_Pass/images/image10.png",
+    image: "/img/battlePass/image10.svg",
   },
   {
     id: 11,
@@ -117,7 +117,7 @@ export const freePassRewards: Reward[] = [
     isPremium: false,
     position: 11,
     type: "emote",
-    image: "/Better_Pass/images/image11.png",
+    image: "/img/battlePass/image11.svg",
   },
   {
     id: 12,
@@ -125,7 +125,7 @@ export const freePassRewards: Reward[] = [
     isPremium: false,
     position: 12,
     type: "melee",
-    image: "/Better_Pass/images/image12.png",
+    image: "/img/battlePass/image12.svg",
   },
   {
     id: 13,
@@ -133,7 +133,7 @@ export const freePassRewards: Reward[] = [
     isPremium: false,
     position: 13,
     type: "skin",
-    image: "/Better_Pass/images/image13.png",
+    image: "/img/battlePass/image13.svg",
   },
   {
     id: 14,
@@ -141,7 +141,7 @@ export const freePassRewards: Reward[] = [
     isPremium: false,
     position: 14,
     type: "emote",
-    image: "/Better_Pass/images/image14.png",
+    image: "/img/battlePass/image14.svg",
   },
   {
     id: 15,
@@ -149,7 +149,7 @@ export const freePassRewards: Reward[] = [
     isPremium: false,
     position: 15,
     type: "melee",
-    image: "/Better_Pass/images/image15.png",
+    image: "/img/battlePass/image15.svg",
   },
   {
     id: 16,
@@ -157,7 +157,7 @@ export const freePassRewards: Reward[] = [
     isPremium: false,
     position: 16,
     type: "skin",
-    image: "/Better_Pass/images/image16.png",
+    image: "/img/battlePass/image16.svg",
   },
   {
     id: 17,
@@ -165,7 +165,7 @@ export const freePassRewards: Reward[] = [
     isPremium: false,
     position: 17,
     type: "emote",
-    image: "/Better_Pass/images/image17.png",
+    image: "/img/battlePass/image17.svg",
   },
   {
     id: 18,
@@ -173,7 +173,7 @@ export const freePassRewards: Reward[] = [
     isPremium: false,
     position: 18,
     type: "melee",
-    image: "/Better_Pass/images/image18.png",
+    image: "/img/battlePass/image18.svg",
   },
   {
     id: 19,
@@ -181,7 +181,7 @@ export const freePassRewards: Reward[] = [
     isPremium: false,
     position: 19,
     type: "skin",
-    image: "/Better_Pass/images/image19.png",
+    image: "/img/battlePass/image19.svg",
   },
   {
     id: 20,
@@ -189,7 +189,7 @@ export const freePassRewards: Reward[] = [
     isPremium: false,
     position: 20,
     type: "emote",
-    image: "/Better_Pass/images/image20.png",
+    image: "/img/battlePass/image20.svg",
   },
   {
     id: 21,
@@ -197,7 +197,7 @@ export const freePassRewards: Reward[] = [
     isPremium: false,
     position: 21,
     type: "melee",
-    image: "/Better_Pass/images/image21.png",
+    image: "/img/battlePass/image21.svg",
   },
   {
     id: 22,
@@ -205,7 +205,7 @@ export const freePassRewards: Reward[] = [
     isPremium: false,
     position: 22,
     type: "skin",
-    image: "/Better_Pass/images/image22.png",
+    image: "/img/battlePass/image22.svg",
   },
   {
     id: 23,
@@ -213,7 +213,7 @@ export const freePassRewards: Reward[] = [
     isPremium: false,
     position: 23,
     type: "emote",
-    image: "/Better_Pass/images/image23.png",
+    image: "/img/battlePass/image23.svg",
   },
   {
     id: 24,
@@ -221,7 +221,7 @@ export const freePassRewards: Reward[] = [
     isPremium: false,
     position: 24,
     type: "melee",
-    image: "/Better_Pass/images/image24.png",
+    image: "/img/battlePass/image24.svg",
   },
   {
     id: 25,
@@ -229,7 +229,7 @@ export const freePassRewards: Reward[] = [
     isPremium: false,
     position: 25,
     type: "skin",
-    image: "/Better_Pass/images/image25.png",
+    image: "/img/battlePass/image25.svg",
   },
 ];
 
@@ -240,7 +240,7 @@ export const premiumPassRewards: Reward[] = [
     isPremium: true,
     position: 1,
     type: "emote",
-    image: "/Better_Pass/images/image26.png",
+    image: "/img/battlePass/image26.svg",
   },
   {
     id: 27,
@@ -248,7 +248,7 @@ export const premiumPassRewards: Reward[] = [
     isPremium: true,
     position: 2,
     type: "melee",
-    image: "/Better_Pass/images/image27.png",
+    image: "/img/battlePass/image27.svg",
   },
   {
     id: 28,
@@ -256,7 +256,7 @@ export const premiumPassRewards: Reward[] = [
     isPremium: true,
     position: 3,
     type: "skin",
-    image: "/Better_Pass/images/image28.png",
+    image: "/img/battlePass/image28.svg",
   },
   {
     id: 29,
@@ -264,7 +264,7 @@ export const premiumPassRewards: Reward[] = [
     isPremium: true,
     position: 4,
     type: "emote",
-    image: "/Better_Pass/images/image29.png",
+    image: "/img/battlePass/image29.svg",
   },
   {
     id: 30,
@@ -272,7 +272,7 @@ export const premiumPassRewards: Reward[] = [
     isPremium: true,
     position: 5,
     type: "melee",
-    image: "/Better_Pass/images/image30.png",
+    image: "/img/battlePass/image30.svg",
   },
   {
     id: 31,
@@ -280,7 +280,7 @@ export const premiumPassRewards: Reward[] = [
     isPremium: true,
     position: 6,
     type: "skin",
-    image: "/Better_Pass/images/image31.png",
+    image: "/img/battlePass/image31.svg",
   },
   {
     id: 32,
@@ -288,7 +288,7 @@ export const premiumPassRewards: Reward[] = [
     isPremium: true,
     position: 7,
     type: "emote",
-    image: "/Better_Pass/images/image32.png",
+    image: "/img/battlePass/image32.svg",
   },
   {
     id: 33,
@@ -296,7 +296,7 @@ export const premiumPassRewards: Reward[] = [
     isPremium: true,
     position: 8,
     type: "melee",
-    image: "/Better_Pass/images/image33.png",
+    image: "/img/battlePass/image33.svg",
   },
   {
     id: 34,
@@ -304,7 +304,7 @@ export const premiumPassRewards: Reward[] = [
     isPremium: true,
     position: 9,
     type: "skin",
-    image: "/Better_Pass/images/image34.png",
+    image: "/img/battlePass/image34.svg",
   },
   {
     id: 35,
@@ -312,7 +312,7 @@ export const premiumPassRewards: Reward[] = [
     isPremium: true,
     position: 10,
     type: "emote",
-    image: "/Better_Pass/images/image35.png",
+    image: "/img/battlePass/image35.svg",
   },
   {
     id: 36,
@@ -320,7 +320,7 @@ export const premiumPassRewards: Reward[] = [
     isPremium: true,
     position: 11,
     type: "melee",
-    image: "/Better_Pass/images/image36.png",
+    image: "/img/battlePass/image36.svg",
   },
   {
     id: 37,
@@ -328,7 +328,7 @@ export const premiumPassRewards: Reward[] = [
     isPremium: true,
     position: 12,
     type: "skin",
-    image: "/Better_Pass/images/image37.png",
+    image: "/img/battlePass/image37.svg",
   },
   {
     id: 38,
@@ -336,7 +336,7 @@ export const premiumPassRewards: Reward[] = [
     isPremium: true,
     position: 13,
     type: "emote",
-    image: "/Better_Pass/images/image38.png",
+    image: "/img/battlePass/image38.svg",
   },
   {
     id: 39,
@@ -344,7 +344,7 @@ export const premiumPassRewards: Reward[] = [
     isPremium: true,
     position: 14,
     type: "melee",
-    image: "/Better_Pass/images/image39.png",
+    image: "/img/battlePass/image39.svg",
   },
   {
     id: 40,
@@ -352,7 +352,7 @@ export const premiumPassRewards: Reward[] = [
     isPremium: true,
     position: 15,
     type: "skin",
-    image: "/Better_Pass/images/image40.png",
+    image: "/img/battlePass/image40.svg",
   },
   {
     id: 41,
@@ -360,7 +360,7 @@ export const premiumPassRewards: Reward[] = [
     isPremium: true,
     position: 16,
     type: "emote",
-    image: "/Better_Pass/images/image41.png",
+    image: "/img/battlePass/image41.svg",
   },
   {
     id: 42,
@@ -368,7 +368,7 @@ export const premiumPassRewards: Reward[] = [
     isPremium: true,
     position: 17,
     type: "melee",
-    image: "/Better_Pass/images/image42.png",
+    image: "/img/battlePass/image42.svg",
   },
   {
     id: 43,
@@ -376,7 +376,7 @@ export const premiumPassRewards: Reward[] = [
     isPremium: true,
     position: 18,
     type: "skin",
-    image: "/Better_Pass/images/image43.png",
+    image: "/img/battlePass/image43.svg",
   },
   {
     id: 44,
@@ -384,7 +384,7 @@ export const premiumPassRewards: Reward[] = [
     isPremium: true,
     position: 19,
     type: "emote",
-    image: "/Better_Pass/images/image44.png",
+    image: "/img/battlePass/image44.svg",
   },
   {
     id: 45,
@@ -392,7 +392,7 @@ export const premiumPassRewards: Reward[] = [
     isPremium: true,
     position: 20,
     type: "melee",
-    image: "/Better_Pass/images/image45.png",
+    image: "/img/battlePass/image45.svg",
   },
   {
     id: 46,
@@ -400,7 +400,7 @@ export const premiumPassRewards: Reward[] = [
     isPremium: true,
     position: 21,
     type: "skin",
-    image: "/Better_Pass/images/image46.png",
+    image: "/img/battlePass/image46.svg",
   },
   {
     id: 47,
@@ -408,7 +408,7 @@ export const premiumPassRewards: Reward[] = [
     isPremium: true,
     position: 22,
     type: "emote",
-    image: "/Better_Pass/images/image47.png",
+    image: "/img/battlePass/image47.svg",
   },
   {
     id: 48,
@@ -416,7 +416,7 @@ export const premiumPassRewards: Reward[] = [
     isPremium: true,
     position: 23,
     type: "melee",
-    image: "/Better_Pass/images/image48.png",
+    image: "/img/battlePass/image48.svg",
   },
   {
     id: 49,
@@ -424,7 +424,7 @@ export const premiumPassRewards: Reward[] = [
     isPremium: true,
     position: 24,
     type: "skin",
-    image: "/Better_Pass/images/image49.png",
+    image: "/img/battlePass/image49.svg",
   },
   {
     id: 50,
@@ -432,7 +432,7 @@ export const premiumPassRewards: Reward[] = [
     isPremium: true,
     position: 25,
     type: "emote",
-    image: "/Better_Pass/images/image50.png",
+    image: "/img/battlePass/image50.svg",
   },
 ];
 
@@ -452,14 +452,13 @@ export const initialLoadout: LoadoutItem[] = [
     image: "/Better_Pass/images/image27.png",
   },
 ];
-
 export const initialAvailableItems: LoadoutItem[] = [
   {
     id: 1,
     name: "Item 1",
     rarity: "common",
     type: "melee",
-    image: "/Better_Pass/images/image1.png",
+    image: "/img/battlePass/image1.svg",
     price: 500,
   },
   {
@@ -467,7 +466,7 @@ export const initialAvailableItems: LoadoutItem[] = [
     name: "Item 2",
     rarity: "rare",
     type: "skin",
-    image: "/Better_Pass/images/image2.png",
+    image: "/img/battlePass/image2.svg",
     price: 1000,
   },
   {
@@ -475,7 +474,7 @@ export const initialAvailableItems: LoadoutItem[] = [
     name: "Item 3",
     rarity: "legendary",
     type: "emote",
-    image: "/Better_Pass/images/image3.png",
+    image: "/img/battlePass/image3.svg",
     price: 2000,
   },
   {
@@ -483,7 +482,7 @@ export const initialAvailableItems: LoadoutItem[] = [
     name: "Item 4",
     rarity: "mythic",
     type: "melee",
-    image: "/Better_Pass/images/image4.png",
+    image: "/img/battlePass/image4.svg",
     price: 2500,
   },
   {
@@ -491,7 +490,7 @@ export const initialAvailableItems: LoadoutItem[] = [
     name: "Item 5",
     rarity: "common",
     type: "emote",
-    image: "/Better_Pass/images/image5.png",
+    image: "/img/battlePass/image5.svg",
     price: 500,
   },
   {
@@ -499,7 +498,7 @@ export const initialAvailableItems: LoadoutItem[] = [
     name: "Item 6",
     rarity: "rare",
     type: "melee",
-    image: "/Better_Pass/images/image6.png",
+    image: "/img/battlePass/image6.svg",
     price: 1000,
   },
   {
@@ -507,7 +506,7 @@ export const initialAvailableItems: LoadoutItem[] = [
     name: "Item 7",
     rarity: "epic",
     type: "skin",
-    image: "/Better_Pass/images/image7.png",
+    image: "/img/battlePass/image7.svg",
     price: 1500,
   },
   {
@@ -515,7 +514,7 @@ export const initialAvailableItems: LoadoutItem[] = [
     name: "Item 8",
     rarity: "common",
     type: "skin",
-    image: "/Better_Pass/images/image8.png",
+    image: "/img/battlePass/image8.svg",
     price: 500,
   },
   {
@@ -523,7 +522,7 @@ export const initialAvailableItems: LoadoutItem[] = [
     name: "Item 9",
     rarity: "legendary",
     type: "melee",
-    image: "/Better_Pass/images/image9.png",
+    image: "/img/battlePass/image9.svg",
     price: 2000,
   },
   {
@@ -531,7 +530,7 @@ export const initialAvailableItems: LoadoutItem[] = [
     name: "Item 10",
     rarity: "mythic",
     type: "emote",
-    image: "/Better_Pass/images/image10.png",
+    image: "/img/battlePass/image10.svg",
     price: 2500,
   },
   {
@@ -539,7 +538,7 @@ export const initialAvailableItems: LoadoutItem[] = [
     name: "Item 11",
     rarity: "rare",
     type: "skin",
-    image: "/Better_Pass/images/image11.png",
+    image: "/img/battlePass/image11.svg",
     price: 1000,
   },
   {
@@ -547,7 +546,7 @@ export const initialAvailableItems: LoadoutItem[] = [
     name: "Item 12",
     rarity: "common",
     type: "emote",
-    image: "/Better_Pass/images/image12.png",
+    image: "/img/battlePass/image12.svg",
     price: 500,
   },
   {
@@ -555,7 +554,7 @@ export const initialAvailableItems: LoadoutItem[] = [
     name: "Item 13",
     rarity: "legendary",
     type: "skin",
-    image: "/Better_Pass/images/image13.png",
+    image: "/img/battlePass/image13.svg",
     price: 2000,
   },
   {
@@ -563,7 +562,7 @@ export const initialAvailableItems: LoadoutItem[] = [
     name: "Item 14",
     rarity: "epic",
     type: "melee",
-    image: "/Better_Pass/images/image14.png",
+    image: "/img/battlePass/image14.svg",
     price: 1500,
   },
   {
@@ -571,7 +570,7 @@ export const initialAvailableItems: LoadoutItem[] = [
     name: "Item 15",
     rarity: "rare",
     type: "emote",
-    image: "/Better_Pass/images/image15.png",
+    image: "/img/battlePass/image15.svg",
     price: 1000,
   },
   {
@@ -579,7 +578,7 @@ export const initialAvailableItems: LoadoutItem[] = [
     name: "Item 16",
     rarity: "mythic",
     type: "skin",
-    image: "/Better_Pass/images/image16.png",
+    image: "/img/battlePass/image16.svg",
     price: 2500,
   },
   {
@@ -587,7 +586,7 @@ export const initialAvailableItems: LoadoutItem[] = [
     name: "Item 17",
     rarity: "common",
     type: "melee",
-    image: "/Better_Pass/images/image17.png",
+    image: "/img/battlePass/image17.svg",
     price: 500,
   },
   {
@@ -595,7 +594,7 @@ export const initialAvailableItems: LoadoutItem[] = [
     name: "Item 18",
     rarity: "legendary",
     type: "emote",
-    image: "/Better_Pass/images/image18.png",
+    image: "/img/battlePass/image18.svg",
     price: 2000,
   },
   {
@@ -603,7 +602,7 @@ export const initialAvailableItems: LoadoutItem[] = [
     name: "Item 19",
     rarity: "epic",
     type: "skin",
-    image: "/Better_Pass/images/image19.png",
+    image: "/img/battlePass/image19.svg",
     price: 1500,
   },
   {
@@ -611,7 +610,7 @@ export const initialAvailableItems: LoadoutItem[] = [
     name: "Item 20",
     rarity: "rare",
     type: "melee",
-    image: "/Better_Pass/images/image20.png",
+    image: "/img/battlePass/image20.svg",
     price: 1000,
   },
   {
@@ -619,7 +618,7 @@ export const initialAvailableItems: LoadoutItem[] = [
     name: "Item 21",
     rarity: "mythic",
     type: "emote",
-    image: "/Better_Pass/images/image21.png",
+    image: "/img/battlePass/image21.svg",
     price: 2500,
   },
   {
@@ -627,7 +626,7 @@ export const initialAvailableItems: LoadoutItem[] = [
     name: "Item 22",
     rarity: "legendary",
     type: "melee",
-    image: "/Better_Pass/images/image22.png",
+    image: "/img/battlePass/image22.svg",
     price: 2000,
   },
   {
@@ -635,7 +634,7 @@ export const initialAvailableItems: LoadoutItem[] = [
     name: "Item 23",
     rarity: "epic",
     type: "emote",
-    image: "/Better_Pass/images/image23.png",
+    image: "/img/battlePass/image23.svg",
     price: 1500,
   },
   {
@@ -643,7 +642,7 @@ export const initialAvailableItems: LoadoutItem[] = [
     name: "Item 24",
     rarity: "rare",
     type: "skin",
-    image: "/Better_Pass/images/image24.png",
+    image: "/img/battlePass/image24.svg",
     price: 1000,
   },
   {
@@ -651,7 +650,7 @@ export const initialAvailableItems: LoadoutItem[] = [
     name: "Item 25",
     rarity: "mythic",
     type: "melee",
-    image: "/Better_Pass/images/image25.png",
+    image: "/img/battlePass/image25.svg",
     price: 2500,
   },
   {
@@ -660,7 +659,7 @@ export const initialAvailableItems: LoadoutItem[] = [
     price: 350,
     name: "Item 26",
     type: "emote",
-    image: "/Better_Pass/images/image26.png",
+    image: "/img/battlePass/image26.svg",
   },
   {
     id: 27,
@@ -668,7 +667,7 @@ export const initialAvailableItems: LoadoutItem[] = [
     price: 1200,
     name: "Item 27",
     type: "melee",
-    image: "/Better_Pass/images/image27.png",
+    image: "/img/battlePass/image27.svg",
   },
   {
     id: 28,
@@ -676,7 +675,7 @@ export const initialAvailableItems: LoadoutItem[] = [
     price: 4500,
     name: "Item 28",
     type: "skin",
-    image: "/Better_Pass/images/image28.png",
+    image: "/img/battlePass/image28.svg",
   },
   {
     id: 29,
@@ -684,7 +683,7 @@ export const initialAvailableItems: LoadoutItem[] = [
     price: 3000,
     name: "Item 29",
     type: "emote",
-    image: "/Better_Pass/images/image29.png",
+    image: "/img/battlePass/image29.svg",
   },
   {
     id: 30,
@@ -692,7 +691,7 @@ export const initialAvailableItems: LoadoutItem[] = [
     price: 800,
     name: "Item 30",
     type: "melee",
-    image: "/Better_Pass/images/image30.png",
+    image: "/img/battlePass/image30.svg",
   },
   {
     id: 31,
@@ -700,7 +699,7 @@ export const initialAvailableItems: LoadoutItem[] = [
     price: 4200,
     name: "Item 31",
     type: "skin",
-    image: "/Better_Pass/images/image31.png",
+    image: "/img/battlePass/image31.svg",
   },
   {
     id: 32,
@@ -708,7 +707,7 @@ export const initialAvailableItems: LoadoutItem[] = [
     price: 2500,
     name: "Item 32",
     type: "emote",
-    image: "/Better_Pass/images/image32.png",
+    image: "/img/battlePass/image32.svg",
   },
   {
     id: 33,
@@ -716,7 +715,7 @@ export const initialAvailableItems: LoadoutItem[] = [
     price: 1500,
     name: "Item 33",
     type: "melee",
-    image: "/Better_Pass/images/image33.png",
+    image: "/img/battlePass/image33.svg",
   },
   {
     id: 34,
@@ -724,7 +723,7 @@ export const initialAvailableItems: LoadoutItem[] = [
     price: 3900,
     name: "Item 34",
     type: "skin",
-    image: "/Better_Pass/images/image34.png",
+    image: "/img/battlePass/image34.svg",
   },
   {
     id: 35,
@@ -732,7 +731,7 @@ export const initialAvailableItems: LoadoutItem[] = [
     price: 4700,
     name: "Item 35",
     type: "emote",
-    image: "/Better_Pass/images/image35.png",
+    image: "/img/battlePass/image35.svg",
   },
   {
     id: 36,
@@ -740,7 +739,7 @@ export const initialAvailableItems: LoadoutItem[] = [
     price: 2200,
     name: "Item 36",
     type: "melee",
-    image: "/Better_Pass/images/image36.png",
+    image: "/img/battlePass/image36.svg",
   },
   {
     id: 37,
@@ -748,7 +747,7 @@ export const initialAvailableItems: LoadoutItem[] = [
     price: 5000,
     name: "Item 37",
     type: "skin",
-    image: "/Better_Pass/images/image37.png",
+    image: "/img/battlePass/image37.svg",
   },
   {
     id: 38,
@@ -756,7 +755,7 @@ export const initialAvailableItems: LoadoutItem[] = [
     price: 3100,
     name: "Item 38",
     type: "emote",
-    image: "/Better_Pass/images/image38.png",
+    image: "/img/battlePass/image38.svg",
   },
   {
     id: 39,
@@ -764,7 +763,7 @@ export const initialAvailableItems: LoadoutItem[] = [
     price: 1800,
     name: "Item 39",
     type: "melee",
-    image: "/Better_Pass/images/image39.png",
+    image: "/img/battlePass/image39.svg",
   },
   {
     id: 40,
@@ -772,7 +771,7 @@ export const initialAvailableItems: LoadoutItem[] = [
     price: 4300,
     name: "Item 40",
     type: "skin",
-    image: "/Better_Pass/images/image40.png",
+    image: "/img/battlePass/image40.svg",
   },
   {
     id: 41,
@@ -780,7 +779,7 @@ export const initialAvailableItems: LoadoutItem[] = [
     price: 2600,
     name: "Item 41",
     type: "emote",
-    image: "/Better_Pass/images/image41.png",
+    image: "/img/battlePass/image41.svg",
   },
   {
     id: 42,
@@ -788,7 +787,7 @@ export const initialAvailableItems: LoadoutItem[] = [
     price: 2400,
     name: "Item 42",
     type: "melee",
-    image: "/Better_Pass/images/image42.png",
+    image: "/img/battlePass/image42.svg",
   },
   {
     id: 43,
@@ -796,7 +795,7 @@ export const initialAvailableItems: LoadoutItem[] = [
     price: 3800,
     name: "Item 43",
     type: "skin",
-    image: "/Better_Pass/images/image43.png",
+    image: "/img/battlePass/image43.svg",
   },
   {
     id: 44,
@@ -804,7 +803,7 @@ export const initialAvailableItems: LoadoutItem[] = [
     price: 3200,
     name: "Item 44",
     type: "emote",
-    image: "/Better_Pass/images/image44.png",
+    image: "/img/battlePass/image44.svg",
   },
   {
     id: 45,
@@ -812,7 +811,7 @@ export const initialAvailableItems: LoadoutItem[] = [
     price: 2000,
     name: "Item 45",
     type: "melee",
-    image: "/Better_Pass/images/image45.png",
+    image: "/img/battlePass/image45.svg",
   },
   {
     id: 46,
@@ -820,7 +819,7 @@ export const initialAvailableItems: LoadoutItem[] = [
     price: 4900,
     name: "Item 46",
     type: "skin",
-    image: "/Better_Pass/images/image46.png",
+    image: "/img/battlePass/image46.svg",
   },
   {
     id: 47,
@@ -828,7 +827,7 @@ export const initialAvailableItems: LoadoutItem[] = [
     price: 3500,
     name: "Item 47",
     type: "emote",
-    image: "/Better_Pass/images/image47.png",
+    image: "/img/battlePass/image47.svg",
   },
   {
     id: 48,
@@ -836,7 +835,7 @@ export const initialAvailableItems: LoadoutItem[] = [
     price: 2700,
     name: "Item 48",
     type: "melee",
-    image: "/Better_Pass/images/image48.png",
+    image: "/img/battlePass/image48.svg",
   },
   {
     id: 49,
@@ -844,7 +843,7 @@ export const initialAvailableItems: LoadoutItem[] = [
     price: 4100,
     name: "Item 49",
     type: "skin",
-    image: "/Better_Pass/images/image49.png",
+    image: "/img/battlePass/image49.svg",
   },
   {
     id: 50,
@@ -852,6 +851,7 @@ export const initialAvailableItems: LoadoutItem[] = [
     price: 4500,
     name: "Item 50",
     type: "emote",
-    image: "/Better_Pass/images/image50.png",
+    image: "/img/battlePass/image50.svg",
   },
 ];
+
